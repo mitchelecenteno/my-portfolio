@@ -1,1 +1,59 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* Material Angular */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@import url("https://fonts.googleapis.com/css2?family=Calistoga&family=Grenze&display=swap");
+
+/*  */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+a:hover {
+  color: #fff;
+  transition: 0.5s ease;
+}
+
+:root {
+  --background-color: #122f5a;
+  --link-color: #00ffb3;
+  --primary-color: #d4f1f4;
+  --secondary-color: #cccccc;
+  --text-header-family: "Calistoga", cursive;
+  --text-font-family: "Grenze", serif;
+}
+
+/* html {
+  scroll-behavior: smooth;
+  transition-duration: 1s;
+} */
+
+html,
+body {
+  /* font-size: 67.5%; */
+  height: 100%;
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  scroll-behavior: smooth;
+  transition-duration: 1s;
+  background-color: var(--background-color);
+}
+
+button.custom-button a {
+  text-decoration: none;
+}

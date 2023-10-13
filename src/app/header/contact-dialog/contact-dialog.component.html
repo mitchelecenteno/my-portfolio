@@ -1,0 +1,81 @@
+<h2 mat-dialog-title class="mat-title">Contact Mitchele</h2>
+<mat-dialog-content class="mat-typography">
+  <div class="row">
+    <div class="col-md-6">
+      <section class="form-section">
+        <div>
+          <form [formGroup]="contactForm" class="contact-form">
+            <!-- Input Name -->
+            <p>
+              <mat-form-field appearance="outline">
+                <mat-label class="my-label">Name</mat-label>
+                <input
+                  matInput
+                  placeholder="Full Name"
+                  formControlName="name"
+                />
+              </mat-form-field>
+            </p>
+
+            <!-- Input Email -->
+            <p>
+              <mat-form-field appearance="outline">
+                <mat-label>Email</mat-label>
+                <input matInput placeholder="Email" formControlName="email" />
+              </mat-form-field>
+            </p>
+
+            <!-- Input Message -->
+            <div class="input-container">
+              <p>
+                <mat-form-field appearance="outline">
+                  <mat-label>Message</mat-label>
+                  <input
+                    class="input-msg"
+                    matInput
+                    placeholder="Message"
+                    formControlName="message"
+                  />
+                </mat-form-field>
+              </p>
+            </div>
+          </form>
+        </div>
+      </section>
+    </div>
+    <div class="col-md-6">
+      <p class="font-title">CONTACT INFORMATION</p>
+      <hr />
+      <p class="font-sub-title">ADDRESS:</p>
+      <p>CVS Homes 1, Barangay San Isidro, Cainta Rizal Philippines.</p>
+      <br />
+      <p class="font-sub-title">Email:</p>
+      <p>mitchele.centeno@gmail.com</p>
+      <br />
+      <p class="font-sub-title">Contacts:</p>
+      <p>(+63) 921 425 3672</p>
+      <p>(+63) 976 106 5776</p>
+    </div>
+  </div>
+</mat-dialog-content>
+<mat-dialog-actions>
+  <button
+    mat-raised-button
+    mat-dialog-container
+    type="submit"
+    color="primary"
+    [disabled]="!contactForm.valid"
+    (click)="sendEmail()"
+  >
+    Contact
+  </button>
+  <button
+    mat-raised-button
+    mat-dialog-container
+    type="button"
+    (click)="onCancel()"
+    color="warn"
+  >
+    Cancel
+  </button>
+</mat-dialog-actions>
