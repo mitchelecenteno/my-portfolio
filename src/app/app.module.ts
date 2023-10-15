@@ -19,6 +19,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ContactPageComponent } from './header/contact-page/contact-page.component';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { NavBarComponent } from './header/nav-bar/nav-bar.component';
+import { SocialMediaIconsComponent } from './header/social-media-icons/social-media-icons.component';
+
 
 @NgModule({
   declarations: [
@@ -29,6 +31,8 @@ import { NavBarComponent } from './header/nav-bar/nav-bar.component';
     ContactDialogComponent,
     ContactPageComponent,
     NavBarComponent,
+    SocialMediaIconsComponent,
+
   ],
   imports: [
     BrowserModule,
@@ -43,7 +47,7 @@ import { NavBarComponent } from './header/nav-bar/nav-bar.component';
     MatInputModule,
     MatCardModule,
     MatIconModule,
-    MatToolbarModule,
+    MatToolbarModule, 
   ],
   providers: [],
   bootstrap: [AppComponent],
