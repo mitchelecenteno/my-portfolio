@@ -86,29 +86,6 @@ body {
   transition-delay: 100ms;
 }
 
-[matTooltip]:before {
-  font-family: "Roboto";
-  font-weight: 600;
-  border-radius: 2px;
-  background-color: #cccccc;
-  color: var(--link-color);
-  content: attr(matTooltip);
-  font-size: 12px;
-  visibility: hidden;
-  opacity: 0;
-  padding: 5px 7px;
-  margin-left: 10px;
-  position: absolute;
-  left: 100%;
-  bottom: 20%;
-  white-space: nowrap;
-}
-
-[matTooltip]:hover:before,
-[matTooltip]:hover:after {
-  visibility: visible;
-  opacity: 1;
-}
 .sbutton.mainsbutton {
   background: var(--link-color);
 }

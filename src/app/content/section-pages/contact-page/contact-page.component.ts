@@ -6,7 +6,7 @@ import {
 } from '@angular/material/dialog';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import emailjs, { EmailJSResponseStatus } from '@emailjs/browser';
-import { ContactDialogComponent } from '../contact-dialog/contact-dialog.component';
+import { ContactDialogComponent } from 'src/app/shared/dialog/contact-dialog/contact-dialog.component';
 
 @Component({
   selector: 'app-contact-page',
