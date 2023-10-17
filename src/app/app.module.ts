@@ -20,7 +20,9 @@ import { ContactPageComponent } from './header/contact-page/contact-page.compone
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { NavBarComponent } from './header/nav-bar/nav-bar.component';
 import { SocialMediaIconsComponent } from './header/social-media-icons/social-media-icons.component';
-
+import { MatTooltipModule } from '@angular/material/tooltip';
+import { ContentPageComponent } from './content/content-page/content-page.component';
+import { FooterPageComponent } from './footer/footer-page/footer-page.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +34,8 @@ import { SocialMediaIconsComponent } from './header/social-media-icons/social-me
     ContactPageComponent,
     NavBarComponent,
     SocialMediaIconsComponent,
-
+    ContentPageComponent,
+    FooterPageComponent,
   ],
   imports: [
     BrowserModule,
@@ -47,7 +50,8 @@ import { SocialMediaIconsComponent } from './header/social-media-icons/social-me
     MatInputModule,
     MatCardModule,
     MatIconModule,
-    MatToolbarModule, 
+    MatToolbarModule,
+    MatTooltipModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

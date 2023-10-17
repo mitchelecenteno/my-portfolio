@@ -30,12 +30,14 @@ a:hover {
 }
 
 :root {
-  --background-color: #122f5a;
+  --background-color: #1e2a3a;
   --link-color: #00ffb3;
   --primary-color: #d4f1f4;
   --secondary-color: #cccccc;
   --text-header-family: "Calistoga", cursive;
   --text-font-family: "Grenze", serif;
+  --text-about-page: "Roboto", sans-serif;
+  --proj-card-color: #142030;
 }
 
 /* html {
@@ -56,4 +58,28 @@ body {
 
 button.custom-button a {
   text-decoration: none;
+}
+
+/*  Scroll bar*/
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: none;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--link-color);
+  border-radius: 5px;
+}
+c
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #9b9b9b;
 }

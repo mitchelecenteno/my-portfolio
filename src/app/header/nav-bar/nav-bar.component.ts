@@ -1,12 +1,16 @@
 import { Component, OnInit, Renderer2 } from '@angular/core';
+import { Router } from '@angular/router';
+import { NAV_BAR, NavNode } from 'src/app/interface/navbar-interface';
 
 @Component({
   selector: 'app-nav-bar',
   templateUrl: './nav-bar.component.html',
-  styleUrls: ['./nav-bar.component.css'],
+  styleUrls: ['./nav-bar.component.scss'],
 })
 export class NavBarComponent implements OnInit {
-  constructor(private renderer: Renderer2) {}
+  userNav: NavNode[] = NAV_BAR;
+
+  constructor(private renderer: Renderer2, private router: Router) {}
 
   ngOnInit() {
     this.loadScript('assets/script.js');

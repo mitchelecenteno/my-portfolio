@@ -31,24 +31,6 @@
   text-align: center;
 }
 
-/* ngClass Sample */
-/* .changeBackground {
-  background-color: orange;
-} */
-
-/* .custom-button {
-  margin-top: 0.5rem;
-  padding: 8px 16px;
-  border: 2px solid var(--link-color);
-}
-button.custom-button {
-  color: var(--link-color);
-}
-button.custom-button:hover {
-  color: #fff;
-  background-color: transparent;
-} */
-
 .btn {
   margin-top: 0.5rem;
   padding: 1rem 2.8rem;
@@ -62,7 +44,6 @@ button.custom-button:hover {
   transition: 0.5s ease;
   color: var(--background-color);
 }
-
 
 .btn:hover {
   box-shadow: none;

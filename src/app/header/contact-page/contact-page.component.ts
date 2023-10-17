@@ -11,7 +11,7 @@ import { ContactDialogComponent } from '../contact-dialog/contact-dialog.compone
 @Component({
   selector: 'app-contact-page',
   templateUrl: './contact-page.component.html',
-  styleUrls: ['./contact-page.component.css'],
+  styleUrls: ['./contact-page.component.scss'],
 })
 export class ContactPageComponent {
   searchValue = '';
