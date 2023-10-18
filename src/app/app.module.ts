@@ -25,8 +25,6 @@ import { ContactPageComponent } from './content/section-pages/contact-page/conta
 import { ProjectsPageComponent } from './content/section-pages/projects-page/projects-page.component';
 import { FloatingSocmedIconsComponent } from './shared/floating-socmed-icons/floating-socmed-icons.component';
 
-
-
 @NgModule({
   declarations: [
     AppComponent,

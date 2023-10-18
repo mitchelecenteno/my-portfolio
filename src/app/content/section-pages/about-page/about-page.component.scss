@@ -1,75 +1,74 @@
 .about-wrapper {
+  width: 100%;
+  margin: auto;
+  padding: 10rem 0rem;
+  padding-bottom: 10rem;
+  margin-bottom: 10rem;
+}
+
+.title {
+  text-align: center;
+  color: var(--secondary-color);
+  font-family: var(--text-header-family);
+  font-size: 32px;
+}
+
+.main-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* padding: 5rem 0rem; */
+  flex-wrap: wrap;
+}
+
+img {
+  border: 2px solid rgba(0, 255, 179, 0.7);
+  border-radius: 50%;
+  box-shadow: 0 0 1rem var(--link-color);
+}
+.img-wrap {
+  height: 34rem;
+  width: 33rem;
+  // display: flex;
+  // align-items: center;
+  // flex-direction: center;
+  // justify-content: center;
+}
+
+img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.description-container {
+  width: 70%;
+  padding-left: 5rem;
+  color: var(--primary-color);
+  font-family: var(--text-about-page);
+  font-size: 20px;
+}
+
+@media screen and (max-width: 900px) {
+  .img-container {
     width: 100%;
     margin: auto;
-    padding: 10rem 0rem;
-    padding-bottom: 10rem;
-    margin-bottom: 10rem;
-  }
-  
-  .title {
-    text-align: center;
-    color: var(--secondary-color);
-    font-family: var(--text-header-family);
-    font-size: 32px;
-  }
-  
-  .main-content {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    /* padding: 5rem 0rem; */
-    flex-wrap: wrap;
-  }
-  
-  img {
-    border: 2px solid rgba(0, 255, 179, 0.7);
-    border-radius: 50%;
-    box-shadow: 0 0 1rem var(--link-color);
   }
   .img-wrap {
-    height: 34rem;
-    width: 33rem;
-    display: flex;
-    align-items: center;
-    flex-direction: center;
-    justify-content: center;
+    margin: auto;
+    padding-bottom: 3rem;
   }
-  
-  img {
-    max-height: 100%;
-    max-width: 100%;
-  }
-  
+
   .description-container {
-    width: 70%;
-    padding-left: 5rem;
-    color: var(--primary-color);
-    font-family: var(--text-about-page);
-    font-size: 20px;
+    width: 90%;
+    color: #fff;
+    padding-left: 0rem;
+    margin: auto;
   }
-  
-  @media screen and (max-width: 900px) {
-    .img-container {
-      width: 100%;
-      margin: auto;
-    }
-    .img-wrap {
-      margin: auto;
-      padding-bottom: 3rem;
-    }
-  
-    .description-container {
-      width: 90%;
-      color: #fff;
-      padding-left: 0rem;
-      margin: auto;
-    }
+}
+
+@media screen and (max-width: 400px) {
+  .about-wrapper {
+    padding: 0;
+    /* margin: 0; */
   }
-  
-  @media screen and (max-width: 400px) {
-    .about-wrapper {
-      padding: 0;
-      /* margin: 0; */
-    }
-  }
-  
+}
