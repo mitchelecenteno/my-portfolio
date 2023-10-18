@@ -1,6 +1,7 @@
 import { Component, OnInit, Renderer2 } from '@angular/core';
 import { Router } from '@angular/router';
-import { NAV_BAR, NavNode } from 'src/app/interface/navbar-interface';
+import { NavNode } from 'src/app/interface/navbar-interface';
+import { NAV_BAR } from './config';
 
 @Component({
   selector: 'app-nav-bar',
