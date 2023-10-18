@@ -1,48 +1,36 @@
-<ng-container *ngFor="let item of about">
-  <div class="flex">
-    <!-- Image -->
-    <div
-      class="flex-1 md:flex-none flex align-items-center justify-content-center"
-    >
-      <div class="img-wrap">
-        <img src="assets/images/my-image2.jpg" alt="" />
+<div class="about-wrapper">
+  <br />
+  <br />
+  <br />
+  <br />
+
+  <ng-container *ngFor="let item of about">
+    <h2 class="intro">{{ item.intro }}</h2>
+    <h1 class="title">{{ item.title }}</h1>
+    <div class="main-content">
+      <div class="img-container">
+        <div class="img-wrap">
+          <img src="assets/images/my-image2.jpg" alt="" />
+        </div>
+      </div>
+      <div class="description-container">
+        <p>
+          <i class="fas fa-angle-right icon-color"></i>
+          {{ item.description_1 }}
+        </p>
+        <p>
+          <i class="fas fa-angle-right icon-color"></i>
+          {{ item.description_2 }}
+        </p>
+        <p>
+          <i class="fas fa-angle-right icon-color"></i>
+          {{ item.description_3 }}
+        </p>
+        <p>
+          <i class="fas fa-angle-right icon-color"></i>
+          {{ item.description_4 }}
+        </p>
       </div>
     </div>
-    <!-- About Content -->
-    <div
-      class="flex-1 md:flex-none flex align-items-center justify-content-center"
-      style="color: white"
-    >
-      <h2>{{ item.intro }}</h2>
-      <h1>{{ item.title }}</h1>
-      <p>
-        {{ item.description }}
-      </p>
-      <br />
-      <p>
-        Name:
-        {{ item.name }}
-      </p>
-      <p>
-        Date of birth:
-        {{ item.birthday }}
-      </p>
-      <p>
-        Address:
-        {{ item.address }}
-      </p>
-      <p>
-        Zipcode:
-        {{ item.zipcode }}
-      </p>
-      <p>
-        Email:
-        {{ item.email }}
-      </p>
-      <p>
-        Phone:
-        {{ item.phone }}
-      </p>
-    </div>
-  </div>
-</ng-container>
+  </ng-container>
+</div>

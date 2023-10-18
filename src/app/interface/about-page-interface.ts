@@ -1,11 +1,8 @@
 export interface AboutPageInterface {
-  intro: string,
+  intro: string;
   title: string;
-  description: string;
-  name: string;
-  birthday?: string;
-  address?: string;
-  zipcode?: number;
-  email: string;
-  phone: string;
+  description_1: string;
+  description_2?: string;
+  description_3?: string;
+  description_4?: string;
 }
