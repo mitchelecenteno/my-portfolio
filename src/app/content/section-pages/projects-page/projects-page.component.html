@@ -1,156 +1,29 @@
-<div class="port-container">
-    <section class="portfolio-section">
-      <div class="row">
-        <div class="col-sm-4">
-          <!--  -->
-          <mat-card class="example-card port-box">
+<div style="padding-top: 17rem">
+  <div class="flex flex-wrap align-content-center justify-content-center">
+    <ng-container *ngFor="let item of projects">
+      <div class="col-4">
+        <div class="p-1">
+          <mat-card class="proj-animation">
             <mat-card-header>
-              <mat-card-title class="project-title">Project 1</mat-card-title>
+              <mat-card-title>{{ item.title }}</mat-card-title>
               <a href="https://example.com" target="_blank">
                 <button mat-icon-button>
                   <mat-icon fontIcon="open_in_new"></mat-icon>
                 </button>
               </a>
-              <mat-card-subtitle>Project Short Description</mat-card-subtitle>
+              <mat-card-subtitle>{{ item.shortDesc }}</mat-card-subtitle>
             </mat-card-header>
             <mat-card-content>
               <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia,
-                vero.
+                {{ item.about_1 }}
               </p>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
-                dolor eveniet odit veniam.
-              </p>
-            </mat-card-content>
-          </mat-card>
-        </div>
-        <div class="col-sm-4">
-          <!--  -->
-          <mat-card class="example-card port-box">
-            <mat-card-header>
-              <mat-card-title>Project 2</mat-card-title>
-              <a href="https://example.com" target="_blank">
-                <button mat-icon-button>
-                  <mat-icon fontIcon="open_in_new"></mat-icon>
-                </button>
-              </a>
-              <mat-card-subtitle>Project Short Description</mat-card-subtitle>
-            </mat-card-header>
-            <mat-card-content>
-              <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia,
-                vero.
-              </p>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
-                dolor eveniet odit veniam.
-              </p>
-            </mat-card-content>
-          </mat-card>
-        </div>
-        <!--  -->
-        <div class="col-sm-4">
-          <mat-card class="example-card port-box">
-            <mat-card-header>
-              <mat-card-title>Project 3</mat-card-title>
-              <a href="https://example.com" target="_blank">
-                <button mat-icon-button>
-                  <mat-icon fontIcon="open_in_new"></mat-icon>
-                </button>
-              </a>
-              <mat-card-subtitle>Project Short Description</mat-card-subtitle>
-            </mat-card-header>
-            <mat-card-content>
-              <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia,
-                vero.
-              </p>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
-                dolor eveniet odit veniam.
+                {{ item.about_2 }}
               </p>
             </mat-card-content>
           </mat-card>
         </div>
       </div>
-      <br />
-      <!-- 2nd row -->
-      <div class="row">
-        <div class="col-sm-4">
-          <!--  -->
-          <mat-card class="example-card port-box">
-            <mat-card-header>
-              <mat-card-title>Project 4</mat-card-title>
-              <a href="https://example.com" target="_blank">
-                <button mat-icon-button>
-                  <mat-icon fontIcon="open_in_new"></mat-icon>
-                </button>
-              </a>
-              <mat-card-subtitle>Project Short Description</mat-card-subtitle>
-            </mat-card-header>
-            <mat-card-content>
-              <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia,
-                vero.
-              </p>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
-                dolor eveniet odit veniam.
-              </p>
-            </mat-card-content>
-          </mat-card>
-        </div>
-        <div class="col-sm-4">
-          <!--  -->
-          <mat-card class="example-card port-box">
-            <mat-card-header>
-              <mat-card-title>Project 5</mat-card-title>
-              <a href="https://example.com" target="_blank">
-                <button mat-icon-button>
-                  <mat-icon fontIcon="open_in_new"></mat-icon>
-                </button>
-              </a>
-              <mat-card-subtitle>Project Short Description</mat-card-subtitle>
-            </mat-card-header>
-            <mat-card-content>
-              <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia,
-                vero.
-              </p>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
-                dolor eveniet odit veniam.
-              </p>
-            </mat-card-content>
-          </mat-card>
-        </div>
-        <!--  -->
-        <div class="col-sm-4">
-          <mat-card class="example-card port-box">
-            <mat-card-header>
-              <mat-card-title>Project 6</mat-card-title>
-              <a href="https://example.com" target="_blank">
-                <button mat-icon-button>
-                  <mat-icon fontIcon="open_in_new"></mat-icon>
-                </button>
-              </a>
-              <mat-card-subtitle>Project Short Description</mat-card-subtitle>
-            </mat-card-header>
-            <mat-card-content>
-              <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia,
-                vero.
-              </p>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
-                dolor eveniet odit veniam.
-              </p>
-            </mat-card-content>
-          </mat-card>
-        </div>
-      </div>
-      <br />
-    </section>
+    </ng-container>
   </div>
-  
+</div>
