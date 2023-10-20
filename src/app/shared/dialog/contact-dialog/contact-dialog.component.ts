@@ -6,8 +6,6 @@ import {
 } from '@angular/material/dialog';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import emailjs, { EmailJSResponseStatus } from '@emailjs/browser';
-import { MatSnackBar } from '@angular/material/snack-bar';
-import { SuccessSbComponent } from '../../snackbar/success-sb/success-sb.component';
 
 @Component({
   selector: 'app-contact-dialog',
@@ -26,14 +24,6 @@ export class ContactDialogComponent {
       Validators.minLength(0),
     ]),
   });
-  durationInSeconds = 5;
-  constructor(
-    @Inject(MAT_DIALOG_DATA) public data: any,
-    private dialogRef: MatDialogRef<ContactDialogComponent>,
-    private snackbar: MatSnackBar
-  ) {}
-
-  ngOnInit() {}
 
   // onSubmit(){}
   public sendEmail() {
@@ -48,6 +38,7 @@ export class ContactDialogComponent {
         (result: EmailJSResponseStatus) => {
           this.openSnackBar();
           console.log('SUCCESS: ', result.text);
+          this.openSnackBar();
         },
         (error) => {
           console.log('ERROR: ', error.text);
@@ -56,11 +47,15 @@ export class ContactDialogComponent {
     this.dialogRef.close();
   }
 
-  openSnackBar() {
-    this.snackbar.openFromComponent(SuccessSbComponent, {
-      duration: this.durationInSeconds * 1000,
-    });
-  }
+  constructor(
+    private dialogRef: MatDialogRef<ContactDialogComponent>,
+    @Inject(MAT_DIALOG_DATA) public data: any
+  ) {}
+
+  ngOnInit() {}
+
+  // onSubmit() {}
+
   onCancel(): void {
     this.dialogRef.close();
   }

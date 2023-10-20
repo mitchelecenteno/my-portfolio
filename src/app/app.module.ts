@@ -24,8 +24,8 @@ import { ContactDialogComponent } from './shared/dialog/contact-dialog/contact-d
 import { ContactPageComponent } from './content/section-pages/contact-page/contact-page.component';
 import { ProjectsPageComponent } from './content/section-pages/projects-page/projects-page.component';
 import { FloatingSocmedIconsComponent } from './shared/floating-socmed-icons/floating-socmed-icons.component';
-import { SuccessSbComponent } from './shared/snackbar/success-sb/success-sb.component';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { SuccessSbComponent } from './shared/snackbar/success-sb/success-sb.component';
 
 @NgModule({
   declarations: [
