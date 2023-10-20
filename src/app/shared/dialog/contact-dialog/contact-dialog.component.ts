@@ -61,6 +61,7 @@ export class ContactDialogComponent {
   openSnackBar() {
     this.snackbar.open(this.message, this.action, {
       duration: this.durationInSeconds * 1000,
+      panelClass: ['success-dialog'],
     });
   }
   onCancel(): void {
