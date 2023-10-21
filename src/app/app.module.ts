@@ -25,7 +25,6 @@ import { ContactPageComponent } from './content/section-pages/contact-page/conta
 import { ProjectsPageComponent } from './content/section-pages/projects-page/projects-page.component';
 import { FloatingSocmedIconsComponent } from './shared/floating-socmed-icons/floating-socmed-icons.component';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
-import { SuccessSbComponent } from './shared/snackbar/success-sb/success-sb.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +38,6 @@ import { SuccessSbComponent } from './shared/snackbar/success-sb/success-sb.comp
     SectionPagesComponent,
     ProjectsPageComponent,
     FloatingSocmedIconsComponent,
-    SuccessSbComponent,
   ],
   imports: [
     BrowserModule,

@@ -38,6 +38,7 @@ a:hover {
   --text-font-family: "Grenze", serif;
   --text-about-page: "Roboto", sans-serif;
   --proj-card-color: #142030;
+  --mat-custom-color: #616161;
 }
 
 /* html {
@@ -77,9 +78,15 @@ button.custom-button a {
   background: var(--link-color);
   border-radius: 5px;
 }
-c
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #9b9b9b;
+}
+
+/* Snackbar */
+.mat-mdc-snack-bar-container {
+  --mat-mdc-snack-bar-button-color: var(--link-color);
+  --mdc-snackbar-container-color: var(--mat-custom-color);
+  --mdc-snackbar-supporting-text-color: rgba(255, 255, 255, 0.87);
 }

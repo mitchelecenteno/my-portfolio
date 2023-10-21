@@ -1,34 +1,12 @@
 <div class="sbuttons">
+  <ng-container *ngFor="let item of socmeds">
     <a
-      href="https://www.facebook.com/chelcenteno/"
+      href="{{ item.link }}"
       target="_blank"
-      class="sbutton fb"
+      class="{{ item.style }}"
       matTooltipPosition="left"
-      matTooltip="Facebook"
-      ><i class="fab fa-facebook-f"></i
+      matTooltip="{{ item.toolTip }}"
+      ><i class="{{ item.icon }}"></i
     ></a>
-    <a
-      href="https://www.linkedin.com/in/mitchele-centeno-3948ba239/"
-      target="_blank"
-      class="sbutton linkedin"
-      matTooltipPosition="left"
-      matTooltip="Linkedin"
-      ><i class="fab fa-linkedin-in"></i
-    ></a>
-    <a
-      href="https://codepen.io/mitchelecenteno"
-      target="_blank"
-      class="sbutton codepen"
-      matTooltipPosition="left"
-      matTooltip="Codepen"
-      ><i class="fab fa-codepen"></i
-    ></a>
-    <a
-      target="_blank"
-      class="link-button sbutton mainsbutton"
-      matTooltipPosition="left"
-      matTooltip="Social Links"
-      ><i class="far fa-comment-dots"></i
-    ></a>
-  </div>
-  
+  </ng-container>
+</div>

@@ -6,7 +6,6 @@ import {
 } from '@angular/material/dialog';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import emailjs, { EmailJSResponseStatus } from '@emailjs/browser';
-import { SuccessSbComponent } from '../../snackbar/success-sb/success-sb.component';
 import { MatSnackBar } from '@angular/material/snack-bar';
 
 @Component({
@@ -26,8 +25,8 @@ export class ContactDialogComponent {
       Validators.minLength(0),
     ]),
   });
-  durationInSeconds = 3.5;
-  message = 'message sent successfully';
+  durationInSeconds = 3;
+  message = 'Message sent.';
   action = 'OK';
 
   constructor(
@@ -61,7 +60,7 @@ export class ContactDialogComponent {
   openSnackBar() {
     this.snackbar.open(this.message, this.action, {
       duration: this.durationInSeconds * 1000,
-      panelClass: ['success-dialog'],
+      panelClass: ['warning'],
     });
   }
   onCancel(): void {
