@@ -1,0 +1,97 @@
+.home-container {
+  position: absolute;
+}
+
+.welcome-section {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+span {
+  color: var(--link-color);
+}
+
+.intro {
+  font-size: 22px;
+  color: var(--primary-color);
+  font-family: var(--text-font-family);
+}
+
+.top-space {
+  padding-top: 5rem;
+}
+
+.name {
+  font-size: 51.25px;
+  color: var(--primary-color);
+  margin: 0;
+  padding-top: 1.5rem;
+  font-family: var(--text-header-family);
+}
+
+.job {
+  font-size: 51.25px;
+  color: var(--secondary-color);
+  margin: 0;
+  padding-top: 4.5rem;
+  font-family: var(--text-header-family);
+}
+
+.short-desc {
+  color: var(--primary-color);
+  font-family: var(--text-font-family);
+  font-size: 22px;
+}
+
+@media screen and (max-width: 728px) {
+  .welcome-section {
+    padding: 1rem;
+  }
+
+  .top-space {
+    padding-top: 1rem;
+  }
+  .intro {
+    font-size: 19px;
+  }
+
+  .name {
+    font-size: 30px;
+    padding-top: 0.5rem;
+    color: var(--link-color) !important;
+  }
+
+  .job {
+    font-size: 30px;
+    padding-top: 2.5rem;
+  }
+
+  .short-desc {
+    font-size: 13px;
+    padding-top: 2.5rem;
+  }
+}
+
+.btn {
+  margin-top: 2rem;
+  padding: 1rem 2.8rem;
+  background-color: var(--link-color);
+  border-radius: 4rem;
+  box-shadow: 0 0 1rem var(--link-color);
+  font-size: 1.6rem;
+  letter-spacing: 0.1rem;
+  font-weight: 600;
+  transition: 0.5s ease;
+}
+
+.btn:hover {
+  box-shadow: none;
+}
+
+button a {
+  color: var(--background-color);
+}

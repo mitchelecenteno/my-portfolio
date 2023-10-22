@@ -57,7 +57,7 @@ body {
   background-color: var(--background-color);
 }
 
-button.custom-button a {
+button.custom-btn a {
   text-decoration: none;
 }
 

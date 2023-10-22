@@ -14,12 +14,12 @@
               <mat-card-subtitle>{{ item.shortDesc }}</mat-card-subtitle>
             </mat-card-header>
             <mat-card-content>
-              <p>
-                {{ item.about_1 }}
-              </p>
-              <p>
-                {{ item.about_2 }}
-              </p>
+              <ng-container *ngFor="let desc of descriptions">
+                <p>
+                  {{ desc.desc_1 }}
+                </p>
+                <p>{{ desc.desc_2 }}</p>
+              </ng-container>
             </mat-card-content>
           </mat-card>
         </div>

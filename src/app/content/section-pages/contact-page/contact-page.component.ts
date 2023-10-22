@@ -17,7 +17,7 @@ export class ContactPageComponent {
   searchValue = '';
 
   constructor(public dialog: MatDialog) {}
-  openDialog(): void {
+  sendMessage(): void {
     this.dialog.open(ContactDialogComponent, {
       width: '60vw',
       height: 'auto',
