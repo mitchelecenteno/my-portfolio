@@ -64,6 +64,7 @@ body {
 .sbutton:nth-last-child(1) {
   -webkit-transition-delay: 25ms;
   transition-delay: 25ms;
+  transform: scale(0.9);
 }
 .sbutton:not(:last-child):nth-last-child(2) {
   -webkit-transition-delay: 20ms;
@@ -91,11 +92,14 @@ body {
 }
 .sbutton.codepen {
   background: #000000;
+  transition: all 0.3s ease-in-out;
 }
 
 .sbutton.linkedin {
   background: #0072b1;
+  transition: all 0.3s ease-in-out;
 }
 .sbutton.fb {
   background: #3f51b5;
+  transition: all 0.3s ease-in-out;
 }

@@ -11,20 +11,20 @@ import { MatInputModule } from '@angular/material/input';
 import { MatCardModule } from '@angular/material/card';
 import { MatIconModule } from '@angular/material/icon';
 import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppComponent } from './app.component';
 
-import { NavBarComponent } from './header/nav-bar/nav-bar.component';
-import { FooterPageComponent } from './footer/footer-page/footer-page.component';
-import { SectionPagesComponent } from './content/section-pages/section-pages.component';
-import { HomePageComponent } from './content/section-pages/home-page/home-page.component';
-import { AboutPageComponent } from './content/section-pages/about-page/about-page.component';
+import { NavBarComponent } from './1 - header/nav-bar/nav-bar.component';
+import { FooterPageComponent } from './3 - footer/footer-page/footer-page.component';
+import { SectionPagesComponent } from './2 - content/section-pages/section-pages.component';
+import { HomePageComponent } from './2 - content/section-pages/home-page/home-page.component';
+import { AboutPageComponent } from './2 - content/section-pages/about-page/about-page.component';
 import { ContactDialogComponent } from './shared/dialog/contact-dialog/contact-dialog.component';
-import { ContactPageComponent } from './content/section-pages/contact-page/contact-page.component';
-import { ProjectsPageComponent } from './content/section-pages/projects-page/projects-page.component';
+import { ContactPageComponent } from './2 - content/section-pages/contact-page/contact-page.component';
+import { ProjectsPageComponent } from './2 - content/section-pages/projects-page/projects-page.component';
 import { FloatingSocmedIconsComponent } from './shared/floating-socmed-icons/floating-socmed-icons.component';
-import { MatSnackBarModule } from '@angular/material/snack-bar';
 
 @NgModule({
   declarations: [
