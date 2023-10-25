@@ -181,7 +181,6 @@ nav a:hover {
     content: "";
     display: block;
     height: 5px;
-    /* background: black; */
     position: absolute;
     top: -0.75em;
     left: 0;
@@ -192,5 +191,19 @@ nav a:hover {
 
   nav a:hover::before {
     transform: scale(1, 1);
+  }
+}
+
+// LOGO SPIN
+.logo img {
+  animation: spin 1s linear 1;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
   }
 }
