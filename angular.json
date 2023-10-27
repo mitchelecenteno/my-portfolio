@@ -25,7 +25,7 @@
               "node_modules/primeflex/primeflex.css",
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": ["node_modules/particles.js/particles.js"]
           },
           "configurations": {
             "production": {
@@ -82,7 +82,7 @@
               "@angular/material/prebuilt-themes/purple-green.css",
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": ["node_modules/particles.js/particles.js"]
           }
         }
       }
