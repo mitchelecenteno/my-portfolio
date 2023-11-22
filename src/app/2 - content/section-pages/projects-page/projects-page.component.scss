@@ -25,18 +25,19 @@ p {
   font-size: 18px;
 }
 
-@media screen and (max-width: 470px) {
-  .port-container {
-    /* margin-top: 0; */
-    height: auto;
-  }
-}
+// @media screen and (max-width: 470px) {
+//   .port-container {
+//     /* margin-top: 0; */
+//     height: auto;
+//   }
+// }
 
-@media screen and (max-width: 400px) {
-  .port-container {
-    padding-top: 0;
-  }
-}
+// @media screen and (max-width: 400px) {
+//   .port-container {
+//     padding-top: 0;
+//   }
+
+// }
 
 .proj-animation {
   transition: 0.5s ease;
@@ -52,3 +53,6 @@ mat-card-title,
 a {
   color: var(--link-color);
 }
+
+// @media screen and (max-width: 600px) {
+// }

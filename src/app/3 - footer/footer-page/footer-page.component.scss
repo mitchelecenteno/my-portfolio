@@ -1,11 +1,16 @@
-.copyright {
-  position: absolute;
-  top: 274rem;
-  left: 0;
-  width: 100%;
-  background-color: var(--background-color); /* Optional background color */
-  color: #cccccc;
+.footer {
   text-align: center;
-  padding: 10px 0;
-  font-size: 14px;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: var(
+    --background-color
+  ); /* Optional: Add a background color to the footer */
+  // opacity: 0.75;
+}
+
+.copyright {
+  margin: 0;
+  color: var(--link-color);
 }

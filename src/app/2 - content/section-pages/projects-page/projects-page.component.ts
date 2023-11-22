@@ -10,6 +10,8 @@ import {
   transition,
   trigger,
 } from '@angular/animations';
+import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-projects-page',
@@ -34,4 +36,23 @@ import {
 export class ProjectsPageComponent {
   projects: projectPageInterface[] = PROJECT_PAGE;
   descriptions: ProjectDesc[] = PROJ_DESCRIPTION;
+
+  isSmallScreen: boolean | undefined;
+
+  isExtraSmallScreen: boolean | undefined;
+  private breakpointSubscription!: Subscription;
+
+  constructor(private breakpointObserver: BreakpointObserver) {}
+
+  ngOnInit() {
+    this.breakpointSubscription = this.breakpointObserver
+      .observe([Breakpoints.XSmall, Breakpoints.Small])
+      .subscribe((result) => {
+        this.isExtraSmallScreen = result.matches;
+      });
+  }
+
+  ngOnDestroy() {
+    this.breakpointSubscription.unsubscribe();
+  }
 }

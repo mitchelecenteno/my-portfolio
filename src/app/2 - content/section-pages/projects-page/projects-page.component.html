@@ -1,7 +1,13 @@
-<div style="padding-top: 17rem" [@fadeInLeft]>
+<div style="padding-top: 17rem" class="project-wrapper" [@fadeInLeft]>
   <div class="flex flex-wrap align-content-center justify-content-center">
     <ng-container *ngFor="let item of projects">
-      <div class="col-4">
+      <
+      <div
+        [ngClass]="{
+          'col-5': !isExtraSmallScreen && !isSmallScreen
+        }"
+        class="p-col-12 p-md-6 p-lg-4 p-xl-3"
+      >
         <div class="p-1">
           <mat-card class="proj-animation">
             <mat-card-header>

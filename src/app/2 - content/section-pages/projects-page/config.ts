@@ -18,14 +18,6 @@ export const PROJECT_PAGE: projectPageInterface[] = [
     title: 'Project 4',
     shortDesc: 'Project Short Description',
   },
-  {
-    title: 'Project 5',
-    shortDesc: 'Project Short Description',
-  },
-  {
-    title: 'Project 6',
-    shortDesc: 'Project Short Description',
-  },
 ];
 
 export const PROJ_DESCRIPTION: ProjectDesc[] = [
