@@ -4,10 +4,8 @@
   position: fixed;
   bottom: 0;
   width: 100%;
-  background-color: var(
-    --background-color
-  ); /* Optional: Add a background color to the footer */
-  // opacity: 0.75;
+  background-color: var(--background-color);
+  font-size: 14px;
 }
 
 .copyright {
@@ -15,9 +13,16 @@
   color: var(--link-color);
 }
 
-@media screen and (max-width: 600px) {
+//* TABLET SCREEN
+@media screen and (max-width: 768px) {
   .footer {
-    // display: none;
+    font-size: 11px;
+  }
+}
+
+//* MOBILE SCREEN
+@media screen and (max-width: 480px) {
+  .footer {
     font-size: 9px;
   }
 }

@@ -90,3 +90,16 @@ button.custom-btn a {
   --mdc-snackbar-container-color: var(--mat-custom-color);
   --mdc-snackbar-supporting-text-color: rgba(255, 255, 255, 0.87);
 }
+
+/* Global Button Style */
+.btn {
+  background-color: var(--link-color);
+  border-radius: 4rem;
+  /* box-shadow: 0 0 1rem var(--link-color); */
+  box-shadow: none;
+  color: #fff;
+  letter-spacing: 0.1rem;
+  font-weight: 600;
+  transition: 0.5s ease;
+  color: var(--background-color);
+}

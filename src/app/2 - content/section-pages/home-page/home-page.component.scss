@@ -47,7 +47,22 @@ span {
   font-size: 22px;
 }
 
-@media screen and (max-width: 728px) {
+.btn-size {
+  margin-top: 2rem;
+  padding: 16px 40px;
+  font-size: 1.7rem;
+}
+
+.btn:hover {
+  box-shadow: 0 0 9px var(--link-color);
+}
+
+button a {
+  color: var(--background-color);
+}
+
+//* TABLET SCREENS
+@media screen and (max-width: 768px) {
   .welcome-section {
     padding: 1rem;
   }
@@ -56,42 +71,49 @@ span {
     padding-top: 1rem;
   }
   .intro {
-    font-size: 19px;
+    font-size: 15px;
   }
 
   .name {
-    font-size: 30px;
+    font-size: 41px;
     padding-top: 0.5rem;
     color: var(--link-color) !important;
   }
 
   .job {
-    font-size: 30px;
+    font-size: 41px;
     padding-top: 2.5rem;
   }
 
   .short-desc {
-    font-size: 13px;
+    font-size: 10.5px;
     padding-top: 2.5rem;
+  }
+
+  .btn {
+    padding: 13px 40px;
   }
 }
 
-.btn {
-  margin-top: 2rem;
-  padding: 1rem 2.8rem;
-  background-color: var(--link-color);
-  border-radius: 4rem;
-  box-shadow: 0 0 1rem var(--link-color);
-  font-size: 1.6rem;
-  letter-spacing: 0.1rem;
-  font-weight: 600;
-  transition: 0.5s ease;
-}
+//* MOBILE SCREENS
+@media screen and (max-width: 480px) {
+  .intro {
+    font-size: 12px;
+  }
 
-.btn:hover {
-  box-shadow: none;
-}
+  .name {
+    font-size: 33px;
+  }
 
-button a {
-  color: var(--background-color);
+  .job {
+    font-size: 33px;
+  }
+
+  .short-desc {
+    font-size: 8.5px;
+  }
+
+  .btn {
+    padding: 10.5px 32px;
+  }
 }

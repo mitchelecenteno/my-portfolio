@@ -40,7 +40,6 @@
   font-family: "Poppins", sans-serif;
   color: var(--link-color);
   transition: 0.5s ease;
-  // margin-left: 2px;
 }
 
 .logo:hover {
@@ -127,11 +126,7 @@ nav a:hover {
   cursor: pointer;
 }
 
-@media screen and (min-width: 800px) {
-  .nav-toggle-label {
-    display: none;
-  }
-
+@media screen and (max-width: 768px) {
   header {
     display: grid;
     grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr;
@@ -194,16 +189,132 @@ nav a:hover {
   }
 }
 
-// LOGO SPIN
-// .logo img {
-//   animation: spin 4s linear 1s;
+#menu-icon {
+  display: none;
+}
+
+//* TABLET SCREEN
+@media screen and (max-width: 768px) {
+  .logo {
+    font-size: 32px;
+  }
+
+  // #menu-icon {
+  //   display: none;
+  // }
+}
+
+//* MOBILE SCREEN
+@media screen and (max-width: 768px) {
+  .logo {
+    font-size: 25.5px;
+  }
+
+  /* Mobile styles for the menu icon */
+  #menu-icon {
+    display: block;
+    font-size: 2.5rem;
+    cursor: pointer;
+  }
+
+  .flex {
+    display: none; /* Hide the navigation links by default on smaller screens */
+    flex-direction: column;
+    position: absolute;
+    top: 60px; /* Adjust the top position as needed */
+    left: 0;
+    background-color: var(
+      --background-color
+    ); /* Add background color if needed */
+    z-index: 1;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .flex a {
+    padding: 15px;
+    text-decoration: none;
+    color: var(--link-color);
+    display: block;
+    transition: background-color 0.3s;
+  }
+
+  .flex a:hover {
+    background-color: #f0f0f0; /* Add a background color on hover if needed */
+  }
+}
+
+.menu {
+  color: #fff;
+}
+
+// /* Navigation Bar */
+// .nav {
+//   background: var(--background-color);
+//   display: flex;
+//   justify-content: flex-end;
+//   flex-wrap: wrap;
+//   padding: 0 1rem;
+//   align-items: center;
 // }
 
-// @keyframes spin {
-//   from {
-//     transform: rotate(0deg);
+// .nav-logo {
+//   height: 20px;
+// }
+
+// .nav-list {
+//   width: 100%;
+//   margin: 0;
+// }
+
+// .nav-item {
+//   padding: 0.5rem 2rem; /* Vertical , Horizontal */
+// }
+
+// .nav-item > a {
+//   /* this is how you change the font color of a text of anchor/link element */
+//   color: var(--link-color);
+//   transition: color 0.3s; /* transition of color changing in hover */
+// }
+
+// .nav-item > a:hover {
+//   /* hover will change color to white */
+//   color: #cccccc;
+// }
+
+// .nav-toggler {
+//   opacity: 0.5;
+//   transition: box-shadow 0.15s; /*transition call box-shadow */
+//   cursor: pointer; /* so the toggler looks clickable */
+// }
+
+// .nav.collapsible-expanded .nav-toggler {
+//   /* double class selector */
+//   opacity: 1;
+//   box-shadow: 0 0 0 3px #666; /* vertical, horizontal, blur , spread , color */
+//   border-radius: 5px;
+// }
+
+// .nav-brand {
+//   transform: translateY(
+//     5px
+//   ); /* to fix the extra space below the logo, bec. the vector logo has extra padding in the bottom */
+// }
+
+// @media screen and (min-width: 768px) {
+//   .nav-toggler {
+//     display: none; /* display: NONE*/
 //   }
-//   to {
-//     transform: rotate(360deg);
+
+//   .nav-list {
+//     width: auto;
+//     display: flex; /* display the items horizontally */
+//     font-size: 1.6rem;
+//     max-height: 100%; /* collapsbile content is always visible */
+//     opacity: 1; /* collapsible content is always visible */
+//   }
+
+//   .nav-item {
+//     border: 0; /* bottom border is remove */
 //   }
 // }

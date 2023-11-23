@@ -29,8 +29,13 @@ body {
 
 .link-button {
   color: #122f5a;
-  box-shadow: 0 0 1rem var(--link-color);
+  // box-shadow: 0 0 1rem var(--link-color);
+  box-shadow: none;
   transition: 0.5s ease;
+}
+
+.link-button:hover {
+  box-shadow: 0 0 9px var(--link-color) !important;
 }
 
 .sbutton > i {
@@ -102,4 +107,52 @@ body {
 .sbutton.fb {
   background: #3f51b5;
   transition: all 0.3s ease-in-out;
+}
+
+//* TABLET SCREENS
+@media screen and (max-width: 768px) {
+  .sbutton {
+    width: 48px;
+    height: 48px;
+  }
+
+  .sbutton > i {
+    font-size: 30.5px;
+    line-height: 40px;
+  }
+
+  .sbuttons:hover .sbutton:not(:last-child) {
+    opacity: 1;
+    width: 48px;
+    height: 48px;
+    margin: 12px auto 0;
+  }
+
+  .link-button {
+    padding-top: 5px;
+  }
+}
+
+//* MOBILE SCREENS
+@media screen and (max-width: 480px) {
+  .sbutton {
+    width: 38.5px;
+    height: 38.5px;
+  }
+
+  .sbutton > i {
+    font-size: 24.5px;
+    line-height: 40px;
+  }
+
+  .sbuttons:hover .sbutton:not(:last-child) {
+    opacity: 1;
+    width: 38.5px;
+    height: 38.5px;
+    margin: 9.5px auto 0;
+  }
+
+  .link-button {
+    padding-top: 1px;
+  }
 }
