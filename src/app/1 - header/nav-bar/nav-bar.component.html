@@ -1,39 +1,50 @@
 <!-- Navigation Bar -->
 <header>
   <div class="header">
-    <a href="#" class="logo">
+    <!-- <a href="#" class="logo">
       <img src="assets\images\logo-suit.png" alt="Logo" class="logo" />
-    </a>
-    <span id="menu-icon" class="material-symbols-outlined menu"> menu </span>
+    </a> -->
+    <span
+      id="menu-icon"
+      class="material-symbols-outlined menu"
+      style="color: aquamarine"
+    >
+      menu
+    </span>
 
-    <div class="flex">
-      <ng-container *ngFor="let item of userNav">
-        <nav class="navbar">
-          <ul class="primary-navigation">
-            <li style="margin: 0">
-              <a href="{{ item.route }}" class="active">{{ item.label }}</a>
-            </li>
-          </ul>
-        </nav>
-      </ng-container>
-    </div>
+    <div class="flex"></div>
   </div>
 </header>
 
-<!-- ! -->
+<!-- #2 -->
+<
+<div class="sidenav" [ngClass]="collapsed ? 'sidenav-collapsed' : ''">
+  <div class="logo-container">
+    <div>
+      <button class="logo" (click)="toggleCollapse()">
+        MC
+        <span>
+          <!-- <i class="fa fa-caret-right pt-3 logo"></i> -->
+        </span>
+      </button>
+    </div>
+    <!-- <i class="fa fa-arrow-right logo" style="padding-left: 2rem"></i> -->
 
-<!-- Navigation Bar -->
-<!-- <header>
-  <nav class="nav collapsible">
-    <a class="nav-brand" href="/"><img src="images/logo.svg" alt="" /></a>
-    <svg class="icon icon-white nav-toggler">
-      <use xlink:href="images/sprite.svg#menu"></use>
-    </svg>
-    <ul class="list nav-list collapsible-content">
-      <li class="nav-item"><a href="#">Hosting</a></li>
-      <li class="nav-item"><a href="#">VPS</a></li>
-      <li class="nav-item"><a href="#">Domain</a></li>
-      <li class="nav-item"><a href="#">Pricing</a></li>
-    </ul>
-  </nav>
-</header> -->
+    <div class="logo-text" *ngIf="collapsed"></div>
+    <button class="btn-close" *ngIf="collapsed" (click)="closeSidenav()">
+      <i class="fa fa-times close-icon"></i>
+    </button>
+  </div>
+  <ul class="sidenav-nav">
+    <li class="sidenav-nav-item" *ngFor="let data of navData">
+      <a class="sidenav-nav-link" [routerLink]="[data.routeLink]">
+        <!-- <i class="sidenav-link-icon" [class]="data.icon"></i> -->
+
+        <span>{{ data.number }}</span>
+        <span class="sidenav-link-text" *ngIf="collapsed">
+          {{ data.label }}</span
+        >
+      </a>
+    </li>
+  </ul>
+</div>

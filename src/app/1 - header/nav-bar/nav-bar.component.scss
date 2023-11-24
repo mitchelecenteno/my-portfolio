@@ -1,320 +1,359 @@
-.header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  padding: 1rem;
-  background-color: var(--background-color);
-  align-items: center;
-  z-index: 100;
-  display: flex;
-  justify-content: space-between;
-  align-self: center;
-  padding-right: 8rem;
-}
+// .header {
+//   position: fixed;
+//   top: 0;
+//   left: 0;
+//   width: 100%;
+//   padding: 1rem;
+//   background-color: var(--background-color);
+//   align-items: center;
+//   z-index: 100;
+//   display: flex;
 
-.navbar a {
-  font-size: 1.7rem;
-  font-weight: 200;
-  color: var(--link-color);
-  margin-left: 4rem;
-  transition: 0.5s ease;
-}
+//   justify-content: space-between;
+//   align-self: center;
+//   padding-right: 8rem;
+// }
 
-.navbar {
-  padding-top: 1.5rem;
-  background-color: var(--background-color);
-  border: none;
-}
+// .navbar a {
+//   font-size: 1.7rem;
+//   font-weight: 200;
+//   color: var(--link-color);
+//   margin-left: 4rem;
+//   transition: 0.5s ease;
+// }
 
-.navbar a:hover {
-  font-size: 1.7rem;
-  color: #fff;
-  margin-left: 4rem;
-}
+// .navbar {
+//   padding-top: 1.5rem;
+//   background-color: var(--background-color);
+//   border: none;
+// }
 
-.logo {
-  font-size: 2.5rem;
-  font-weight: 500;
-  cursor: default;
-  font-family: "Poppins", sans-serif;
-  color: var(--link-color);
-  transition: 0.5s ease;
-}
+// .navbar a:hover {
+//   font-size: 1.7rem;
+//   color: #fff;
+//   margin-left: 4rem;
+// }
 
-.logo:hover {
-  color: #fff;
-}
+// .logo {
+//   font-size: 2.5rem;
+//   font-weight: 500;
+//   cursor: default;
+//   font-family: "Poppins", sans-serif;
+//   color: var(--link-color);
+//   transition: 0.5s ease;
+// }
 
-#menu-icon {
-  font-size: 3.6rem;
-  color: var(--link-color);
-  /* display: none; */
-}
+// .logo:hover {
+//   color: #fff;
+// }
 
-/* KP */
-.flex {
-  display: flex;
-  gap: 1rem;
-}
+// #menu-icon {
+//   font-size: 3.6rem;
+//   color: var(--link-color);
+//   display: block;
+// }
 
-.flex a {
-  color: var(--link-color);
-}
+// /* KP */
+// .flex {
+//   display: flex;
+//   gap: 1rem;
+// }
 
-.primary-navigation {
-  padding: 0;
-  margin: 0;
-}
+// .flex a {
+//   color: var(--link-color);
+// }
 
-header {
-  background: var(--background);
-  text-align: center;
-  position: fixed;
-  z-index: 999;
-  width: 100%;
-}
+// .primary-navigation {
+//   padding: 0;
+//   margin: 0;
+// }
 
-nav {
-  position: absolute;
-  text-align: left;
-  top: 100%;
-  left: 0;
-  background: var(--background);
-  width: 100%;
-  transform: scale(1, 0);
-  transform-origin: top;
-  transition: transform 400ms ease-in-out;
-}
+// header {
+//   background: var(--background);
+//   text-align: center;
+//   position: fixed;
+//   z-index: 999;
+//   width: 100%;
+// }
 
-nav ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
+// nav {
+//   position: absolute;
+//   text-align: left;
+//   top: 100%;
+//   left: 0;
+//   background: var(--background);
+//   width: 100%;
+//   transform: scale(1, 0);
+//   transform-origin: top;
+//   transition: transform 400ms ease-in-out;
+// }
 
-nav li {
-  margin-bottom: 1em;
-  margin-left: 1em;
-}
+// nav ul {
+//   margin: 0;
+//   padding: 0;
+//   list-style: none;
+// }
 
-nav a {
-  color: white;
-  text-decoration: none;
-  font-size: 1.2rem;
-  /* text-transform: uppercase; */
-  opacity: 0;
-  transition: opacity 150ms ease-in-out;
-}
+// nav li {
+//   margin-bottom: 1em;
+//   margin-left: 1em;
+// }
 
-nav a:hover {
-  color: #000;
-}
+// nav a {
+//   color: white;
+//   text-decoration: none;
+//   font-size: 1.2rem;
+//   /* text-transform: uppercase; */
+//   opacity: 0;
+//   transition: opacity 150ms ease-in-out;
+// }
 
-.nav-toggle:checked ~ nav {
-  transform: scale(1, 1);
-}
+// nav a:hover {
+//   color: #000;
+// }
 
-.nav-toggle:checked ~ nav a {
-  opacity: 1;
-  transition: opacity 250ms ease-in-out 250ms;
-}
+// .nav-toggle:checked ~ nav {
+//   transform: scale(1, 1);
+// }
 
-.logo {
-  width: 60px;
-  height: 60px;
-  cursor: pointer;
-}
+// .nav-toggle:checked ~ nav a {
+//   opacity: 1;
+//   transition: opacity 250ms ease-in-out 250ms;
+// }
 
-@media screen and (max-width: 768px) {
-  header {
-    display: grid;
-    grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr;
-  }
+// .logo {
+//   width: 60px;
+//   height: 60px;
+//   cursor: pointer;
+// }
 
-  .logo {
-    grid-column: 2 / 3;
-    width: 65px;
-    height: 65px;
-    cursor: pointer;
-  }
+// //*
+// @media screen and (min-width: 768px) {
+//   .logo {
+//     font-size: 32px;
+//   }
 
-  nav {
-    all: unset; /* this causes issues with Edge, since it's unsupported */
+//   header {
+//     display: grid;
+//     grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr;
+//   }
 
-    /* the following lines are not from my video, but add Edge support */
-    position: relative;
-    text-align: left;
-    transition: none;
-    transform: scale(1, 1);
-    background: none;
-    top: initial;
-    left: initial;
-    /* end Edge support stuff */
+//   .logo {
+//     grid-column: 2 / 3;
+//     width: 65px;
+//     height: 65px;
+//     cursor: pointer;
+//   }
 
-    grid-column: 3 / 4;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-  }
+//   nav {
+//     all: unset;
 
-  nav ul {
-    display: flex;
-  }
+//     /* the following lines are not from my video, but add Edge support */
+//     position: relative;
+//     text-align: left;
+//     transition: none;
+//     transform: scale(1, 1);
+//     background: none;
+//     top: initial;
+//     left: initial;
+//     /* end Edge support stuff */
 
-  nav li {
-    margin-left: 3em;
-    margin-bottom: 0;
-  }
+//     grid-column: 3 / 4;
+//     display: flex;
+//     justify-content: flex-end;
+//     align-items: center;
+//   }
 
-  nav a {
-    opacity: 1;
-    position: relative;
-  }
+//   nav ul {
+//     display: flex;
+//   }
 
-  nav a::before {
-    content: "";
-    display: block;
-    height: 5px;
-    position: absolute;
-    top: -0.75em;
-    left: 0;
-    right: 0;
-    transform: scale(0, 1);
-    transition: transform ease-in-out 250ms;
-  }
+//   nav li {
+//     margin-left: 3em;
+//     margin-bottom: 0;
+//   }
 
-  nav a:hover::before {
-    transform: scale(1, 1);
-  }
-}
+//   nav a {
+//     opacity: 1;
+//     position: relative;
+//   }
+
+//   nav a::before {
+//     content: "";
+//     display: block;
+//     height: 5px;
+//     position: absolute;
+//     top: -0.75em;
+//     left: 0;
+//     right: 0;
+//     transform: scale(0, 1);
+//     transition: transform ease-in-out 250ms;
+//   }
+
+//   nav a:hover::before {
+//     transform: scale(1, 1);
+//   }
+// }
+
+// #menu-icon {
+//   display: none;
+// }
+
+// //* TABLET SCREEN
+// @media screen and (max-width: 768px) {
+//   .logo {
+//     font-size: 25.5px;
+//   }
+
+//   #menu-icon {
+//     display: block;
+//     font-size: 2.5rem;
+//     cursor: pointer;
+//   }
+
+//   .flex {
+//     position: absolute;
+//   }
+// }
+
+// //* MOBILE SCREEN
+// @media screen and (max-width: 480px) {
+//   .logo {
+//     font-size: 25.5px;
+//     color: var(--link-color);
+//   }
+
+//   #menu-icon {
+//     display: block;
+//     font-size: 2.5rem;
+//     cursor: pointer;
+//   }
+
+//   .flex {
+//     display: flex;
+//   }
+// }
 
 #menu-icon {
   display: none;
 }
 
-//* TABLET SCREEN
-@media screen and (max-width: 768px) {
-  .logo {
-    font-size: 32px;
-  }
-
-  // #menu-icon {
-  //   display: none;
-  // }
+.sidenav {
+  display: none;
 }
 
-//* MOBILE SCREEN
-@media screen and (max-width: 768px) {
-  .logo {
-    font-size: 25.5px;
-  }
-
-  /* Mobile styles for the menu icon */
+//!
+@media screen and (max-width: 480px), (max-width: 768px) {
   #menu-icon {
-    display: block;
-    font-size: 2.5rem;
-    cursor: pointer;
+    display: none;
   }
 
-  .flex {
-    display: none; /* Hide the navigation links by default on smaller screens */
-    flex-direction: column;
-    position: absolute;
-    top: 60px; /* Adjust the top position as needed */
-    left: 0;
-    background-color: var(
-      --background-color
-    ); /* Add background color if needed */
+  .sidenav {
+    // display: none;
+    background: var(--mat-custom-color);
+    transition: all 0.5s ease;
+    position: fixed;
     z-index: 1;
-    width: 100%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    top: 0;
+    width: 7rem;
+    height: 100vh;
+    // box-shadow: 0.062rem 0 1.25rem 0 var(--background-color);
+
+    .logo-container {
+      display: flex;
+      align-items: center;
+      padding: 0.5rem;
+      width: 100%;
+
+      .logo {
+        background: none;
+        text-align: center;
+        width: 3rem;
+        min-width: 3rem;
+        border-radius: 0.313rem;
+        padding: 0.313rem;
+        font-size: 24px;
+        font-weight: 900;
+        cursor: pointer;
+        border: none;
+        color: var(--background-color);
+      }
+
+      .logo-text {
+        margin-left: 1.5rem;
+        font-size: 24px;
+        font-weight: 700;
+        color: var(--link-color);
+      }
+
+      .btn-close {
+        margin-left: auto;
+        cursor: pointer;
+        width: 2rem;
+        height: 2rem;
+        border-radius: 50%;
+        background-color: transparent;
+        border: none;
+
+        .fa-times {
+          color: #fff;
+          font-size: 24px;
+        }
+      }
+    }
   }
 
-  .flex a {
-    padding: 15px;
-    text-decoration: none;
-    color: var(--link-color);
-    display: block;
-    transition: background-color 0.3s;
+  .sidenav-collapsed {
+    width: 26.5625rem;
+    height: 100vh;
   }
 
-  .flex a:hover {
-    background-color: #f0f0f0; /* Add a background color on hover if needed */
+  .sidenav-nav {
+    list-style: none;
+    padding: 0.938rem;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: calc(100% - 3.65rem);
+    // height: 100vh;
+    cursor: pointer;
+
+    .sidenav-nav-item {
+      width: 100%;
+      margin-bottom: 0.625rem;
+      padding-left: 2rem;
+
+      .sidenav-nav-link {
+        display: flex;
+        align-items: center;
+        height: 3rem;
+        color: var(--link-color);
+        text-decoration: none;
+        border-radius: 0.625rem;
+        transition: all 0.3s ease;
+
+        .sidenav-link-icon {
+          font-size: 22px;
+          width: 2rem;
+          min-width: 2rem;
+          margin: 0 0 0.5rem;
+          text-align: center;
+        }
+
+        .sidenav-link-text {
+          margin-left: 1.5rem;
+        }
+      }
+    }
+
+    .sidenav-nav-item:hover {
+      .sidenav-nav-link {
+        // background-color: #fff;
+        // border-radius: 0.625rem;
+        color: #fff;
+        // padding: 1rem;
+      }
+    }
   }
 }
-
-.menu {
-  color: #fff;
-}
-
-// /* Navigation Bar */
-// .nav {
-//   background: var(--background-color);
-//   display: flex;
-//   justify-content: flex-end;
-//   flex-wrap: wrap;
-//   padding: 0 1rem;
-//   align-items: center;
-// }
-
-// .nav-logo {
-//   height: 20px;
-// }
-
-// .nav-list {
-//   width: 100%;
-//   margin: 0;
-// }
-
-// .nav-item {
-//   padding: 0.5rem 2rem; /* Vertical , Horizontal */
-// }
-
-// .nav-item > a {
-//   /* this is how you change the font color of a text of anchor/link element */
-//   color: var(--link-color);
-//   transition: color 0.3s; /* transition of color changing in hover */
-// }
-
-// .nav-item > a:hover {
-//   /* hover will change color to white */
-//   color: #cccccc;
-// }
-
-// .nav-toggler {
-//   opacity: 0.5;
-//   transition: box-shadow 0.15s; /*transition call box-shadow */
-//   cursor: pointer; /* so the toggler looks clickable */
-// }
-
-// .nav.collapsible-expanded .nav-toggler {
-//   /* double class selector */
-//   opacity: 1;
-//   box-shadow: 0 0 0 3px #666; /* vertical, horizontal, blur , spread , color */
-//   border-radius: 5px;
-// }
-
-// .nav-brand {
-//   transform: translateY(
-//     5px
-//   ); /* to fix the extra space below the logo, bec. the vector logo has extra padding in the bottom */
-// }
-
-// @media screen and (min-width: 768px) {
-//   .nav-toggler {
-//     display: none; /* display: NONE*/
-//   }
-
-//   .nav-list {
-//     width: auto;
-//     display: flex; /* display the items horizontally */
-//     font-size: 1.6rem;
-//     max-height: 100%; /* collapsbile content is always visible */
-//     opacity: 1; /* collapsible content is always visible */
-//   }
-
-//   .nav-item {
-//     border: 0; /* bottom border is remove */
-//   }
-// }
