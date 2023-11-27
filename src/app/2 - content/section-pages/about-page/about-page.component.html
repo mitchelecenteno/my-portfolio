@@ -1,19 +1,22 @@
-<div class="about-wrapper" [@fadeInLeft]>
+<div class="about-wrapper">
   <ng-container *ngFor="let item of about">
     <h2 class="intro">{{ item.intro }}</h2>
     <h1 class="title">{{ item.title }}</h1>
     <div class="main-content">
       <div class="img-container">
-        <div class="img-wrap">
-          <img src="assets/images/logo-portfolio.jpg" alt="" />
+        <div class="img-wrap animated-box">
+          <img src="assets/images/port.png" alt="" />
         </div>
       </div>
-      <div class="description-container">
+      <div class="description-container description">
         <ng-container *ngFor="let item of descriptions">
           <p>
-            <i class="fas fa-angle-right icon-color"></i>
-
-            {{ item.desc }}
+            <i class="fa fa-caret-right icon-color p-4"></i>
+            <i
+              >"I'm Mitchele, a Software Developer with a passion for technology
+              <br />
+              and a hunger for learning"</i
+            >
           </p>
         </ng-container>
       </div>
