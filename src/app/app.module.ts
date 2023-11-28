@@ -25,6 +25,7 @@ import { ContactDialogComponent } from './shared/dialog/contact-dialog/contact-d
 import { ContactPageComponent } from './2 - content/section-pages/contact-page/contact-page.component';
 import { ProjectsPageComponent } from './2 - content/section-pages/projects-page/projects-page.component';
 import { FloatingSocmedIconsComponent } from './shared/floating-socmed-icons/floating-socmed-icons.component';
+import { BiodataPageComponent } from './2 - content/biodata-page/biodata-page.component';
 
 @NgModule({
   declarations: [
@@ -38,6 +39,7 @@ import { FloatingSocmedIconsComponent } from './shared/floating-socmed-icons/flo
     SectionPagesComponent,
     ProjectsPageComponent,
     FloatingSocmedIconsComponent,
+    BiodataPageComponent,
   ],
   imports: [
     BrowserModule,

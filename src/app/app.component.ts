@@ -20,6 +20,10 @@ export class AppComponent {
       path: 'about',
     },
     {
+      label: 'Experience',
+      path: 'biodata',
+    },
+    {
       label: 'Portfolio',
       path: 'portfolio',
     },
@@ -29,11 +33,5 @@ export class AppComponent {
     },
   ];
 
-  public ngOnInit(): void {
-    this.invokeParticles();
-  }
-
-  public invokeParticles(): void {
-    this.particlesJS('particles-js', ParticlesConfig, function () {});
-  }
+  public ngOnInit(): void {}
 }

@@ -19,7 +19,7 @@
 
 .main-content {
   display: flex;
-  align-items: center;
+  // align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
 }
@@ -78,12 +78,13 @@ img {
 }
 
 .description-container {
-  width: 70%;
+  // width: 70%;
   // padding-left: 5rem;
   color: var(--primary-color);
-  text-align: center;
+  // text-align: center;
   // font-family: 'Cedarville Cursive', cursive;
 }
+
 .description {
   // font-family: var(--text-about-page);
   font-size: 18px;
@@ -139,4 +140,39 @@ img {
   .description-container {
     font-size: 12.5px;
   }
+}
+
+//
+.bio-title {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.subtitle {
+  font-size: 45px;
+  font-weight: 900;
+}
+
+.year {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.info {
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.sub-info {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.about {
+  color: var(--primary-color);
 }

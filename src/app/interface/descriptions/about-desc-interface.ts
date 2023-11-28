@@ -1,3 +1,3 @@
 export interface AboutDesc {
-  desc: string;
+  desc?: string;
 }
