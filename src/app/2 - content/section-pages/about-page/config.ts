@@ -3,7 +3,7 @@ import { AboutDesc } from 'src/app/interface/descriptions/about-desc-interface';
 
 export const ABOUT_PAGE: AboutPageInterface[] = [
   {
-    intro: 'Hello, Welcome',
+    // intro: 'Hello, Welcome',
     title: ``,
   },
 ];

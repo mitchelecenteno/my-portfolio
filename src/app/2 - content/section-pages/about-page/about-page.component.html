@@ -1,17 +1,27 @@
 <div class="about-wrapper">
+  <!-- <div class="box-img"></div> -->
+
+  <!-- <img
+    class="active"
+    src="https://lh4.googleusercontent.com/i1RprwcvxhbN2TAMunNxS4RiNVT0DvlD9FNQCvPFuJ0=w140-h165-no"
+  /> -->
   <ng-container *ngFor="let item of about">
     <h2 class="intro">{{ item.intro }}</h2>
     <h1 class="title">{{ item.title }}</h1>
     <div class="main-content">
       <div class="img-container">
-        <div class="img-wrap animated-box">
-          <img src="assets/images/port.png" alt="" />
+        <div class="img-wrap box-img animated-box">
+          <img
+            src="assets/images/me.png"
+            alt="picture of Mitchele"
+            class="image"
+          />
         </div>
       </div>
       <div class="description-container description">
         <ng-container *ngFor="let item of descriptions">
           <p>
-            <i class="fa fa-caret-right icon-color p-4"></i>
+            <!-- <i class="fa fa-caret-right icon-color p-4"></i> -->
             <i
               >"I'm Mitchele, a Software Developer with a passion for technology
               <br />

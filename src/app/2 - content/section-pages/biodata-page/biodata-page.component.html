@@ -1,0 +1,93 @@
+<div class="about-wrapper">
+  <h2 class="about bio-title">BIODATA</h2>
+  <div class="about grid pt-3">
+    <div class="col-6">
+      <h1 class="subtitle">Education</h1>
+      <div class="pt-4">
+        <ng-container *ngFor="let item of bioEduc">
+          <p class="year">{{ item.year }}</p>
+          <p class="info">{{ item.course }}</p>
+          <p class="school">{{ item.school }}</p>
+        </ng-container>
+        <h1 class="subtitle pt-6">Skills</h1>
+
+        <div class="pt-4 skills">
+          <p>
+            <img
+              src="assets/images/svg/html.svg"
+              alt="HTML logo"
+              class="responsive-logo"
+            />
+            HTML
+          </p>
+          <p>
+            <img
+              src="assets/images/svg/css.svg"
+              alt="CSS logo"
+              class="responsive-logo"
+            />
+            CSS
+          </p>
+          <p>
+            <img
+              src="assets/images/svg/javascript.svg"
+              alt="Javascript logo"
+              class="responsive-logo"
+            />
+            Javascript
+          </p>
+          <p>
+            <img
+              src="assets/images/svg/angular-icon.svg"
+              alt="Angular logo"
+              class="responsive-logo"
+            />
+            Angular
+          </p>
+          <p>
+            <img
+              src="assets/images/svg/oracle.svg"
+              alt="Oracle logo"
+              class="responsive-logo-ora"
+            />
+            Oracle Database
+          </p>
+          <p>
+            <img
+              src="assets/images/svg/sql-db.svg"
+              alt="SQL logo"
+              class="responsive-logo-sql"
+            />
+            SQL Server
+          </p>
+          <p>
+            <img
+              src="assets/images/svg/adobe-photoshop.svg"
+              alt="Photoshop logo"
+              class="responsive-logo"
+            />
+            Adobe Photoshop
+          </p>
+          <p>
+            <img
+              src="assets/images/svg/adobe-lightroom.svg"
+              alt="Lightroom logo"
+              class="responsive-logo"
+            />
+            Adobe Lightroom
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col-6">
+      <h1 class="subtitle">Experience</h1>
+      <ng-container *ngFor="let item of bioExp">
+        <div class="pt-4">
+          <p class="year">{{ item.year }}</p>
+          <p class="info">{{ item.role }}</p>
+          <p class="company">{{ item.company }}</p>
+        </div>
+      </ng-container>
+    </div>
+  </div>
+</div>
