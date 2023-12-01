@@ -109,6 +109,11 @@ body {
   transition: all 0.3s ease-in-out;
 }
 
+.sbutton.behance {
+  background: #0861ff;
+  transition: all 0.3s ease-in-out;
+}
+
 //* TABLET SCREENS
 @media screen and (max-width: 768px) {
   .sbutton {

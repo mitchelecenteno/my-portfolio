@@ -1,4 +1,4 @@
 export interface AboutPageInterface {
-  intro: string;
+  intro?: string;
   title: string;
 }

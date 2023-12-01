@@ -9,4 +9,6 @@ import { BIODATA_EDUCATION, BIODATA_EXPERIENCE } from './config';
 export class BiodataPageComponent {
   bioEduc = BIODATA_EDUCATION;
   bioExp = BIODATA_EXPERIENCE;
+
+  ngOnInit(): void {}
 }

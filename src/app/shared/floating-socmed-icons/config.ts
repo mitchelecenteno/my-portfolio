@@ -20,6 +20,12 @@ export const FLOAT_SOCMED: FloatSocMedInterface[] = [
     icon: 'fab fa-codepen',
   },
   {
+    link: `https://www.behance.net/mitchelecenteno`,
+    style: 'sbutton behance',
+    toolTip: 'Behance',
+    icon: 'fab fa-behance',
+  },
+  {
     toolTip: 'Social Links',
     style: 'link-button sbutton mainsbutton',
     icon: 'far fa-comment-dots',

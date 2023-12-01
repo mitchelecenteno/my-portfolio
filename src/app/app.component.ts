@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { ParticlesConfig } from './interface/particles-config';
-
+import * as AOS from 'aos';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -33,5 +33,7 @@ export class AppComponent {
     },
   ];
 
-  public ngOnInit(): void {}
+  public ngOnInit(): void {
+    AOS.init({ once: false });
+  }
 }
