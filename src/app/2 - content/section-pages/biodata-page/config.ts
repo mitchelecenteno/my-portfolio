@@ -30,6 +30,6 @@ export const BIODATA_EXPERIENCE: BioDataExp[] = [
   {
     year: '2023',
     role: 'Software Developer',
-    company: 'LGU Suite Inc.',
+    company: 'LGUSuite Inc.',
   },
 ];

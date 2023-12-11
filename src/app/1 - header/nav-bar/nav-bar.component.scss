@@ -1,10 +1,17 @@
+.bar {
+  // background-color: var(--background-color);
+  backdrop-filter: blur(10px);
+  width: 100%;
+  height: 70px;
+}
+
 .header {
   position: absolute;
-  // top: -4px;
+  bottom: 4px;
   // left: 412px;
   // width: auto;
   // padding: 1rem;
-  background-color: var(--background-color);
+  // background-color: var(--background-color);
   // align-items: center;
   z-index: 999;
   // display: flex;
@@ -375,6 +382,19 @@ nav a:hover {
 
 //* TABLET SCREEN
 @media screen and (max-width: 768px) {
+  .bar {
+    // background-color: var(--background-color);
+    backdrop-filter: blur(10px);
+    width: 100%;
+    height: 56px;
+  }
+
+  .name {
+    padding-top: 1.5rem;
+    font-size: 24px;
+    left: 36px;
+  }
+
   .logo {
     font-size: 25.5px;
   }
@@ -398,6 +418,19 @@ nav a:hover {
 
 //* MOBILE SCREEN
 @media screen and (max-width: 480px) {
+  .bar {
+    // background-color: var(--background-color);
+    backdrop-filter: blur(10px);
+    width: 100%;
+    height: 45px;
+  }
+
+  .name {
+    padding-top: 1rem;
+    font-size: 19px;
+    left: 29px;
+  }
+
   .logo {
     font-size: 25.5px;
     color: var(--link-color);
