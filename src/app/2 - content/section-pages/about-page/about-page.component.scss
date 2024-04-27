@@ -39,6 +39,7 @@
 
 .image {
   box-shadow: 1rem 1rem 1rem var(--link-color);
+  border-radius: 20px;
   // animation: boxShadowAnimation 3.5s infinite;
 }
 
@@ -73,13 +74,13 @@
 //   justify-content: center;
 // }
 
-// .box-img {
-//   height: 32rem;
-//   width: auto;
-//   border: #fff 1px solid;
-//   border-radius: 5px;
-//   top: 14px;
-// }
+.box-img {
+  height: 32rem;
+  width: auto;
+  border: #fff 1px solid;
+  border-radius: 5px;
+  top: 14px;
+}
 
 .img-wrap {
   height: 34rem;

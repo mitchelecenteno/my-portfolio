@@ -28,8 +28,8 @@ export const BIODATA_EXPERIENCE: BioDataExp[] = [
     company: 'Accenture Inc.',
   },
   {
-    year: '2023',
-    role: 'Software Developer',
+    year: '2023 - Present',
+    role: 'Front End Developer & Software Engineer',
     company: 'LGUSuite Inc.',
   },
 ];
