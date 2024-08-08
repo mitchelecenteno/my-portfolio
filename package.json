@@ -7,7 +7,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "postbuild": "echo '[[redirects]]\n  from = \"/*\"\n  to = \"/index.html\"\n  status = 200' > netlify.toml && mv netlify.toml dist/second-port"
+    "postbuild": "echo '[[redirects]]\n  from = \"/*\"\n  to = \"/index.html\"\n  status = 200' > netlify.toml && mv netlify.toml dist/my-personal-website"
   },
   "private": true,
   "dependencies": {
